@@ -9,8 +9,13 @@ function agregarAmigo() {
     } else {
         amigos.push(nombre);
         console.log(nombre);
-        limpiar();    
+        limpiar(); 
+        CambiarTexto("listaAmigos",amigos.join('<br>'));   
     }
+}
+function CambiarTexto (mostrar,textos) {
+    let texto = document.getElementById(mostrar);
+    texto.innerHTML = textos;
 }
 // Limpiar campo de entrada 
 function limpiar() {
@@ -23,5 +28,7 @@ function sortearAmigo() {
     let aleatorio = Math.floor(Math.random()*NumeroDeAmigos);
     console.log(aleatorio);
     console.log(amigos [aleatorio]);
+    let amigoSecreto = amigos [aleatorio];
+    CambiarTexto("resultado",amigoSecreto);
 }
 
