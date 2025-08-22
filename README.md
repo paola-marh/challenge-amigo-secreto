@@ -25,6 +25,8 @@ Este proyecto fue construido utilizando las tecnologías fundamentales de la web
 ---
 
 ## 🕹️ Cómo Jugar
+Abre este enlace [Juego del Amigo Secreto](https://paola-marh.github.io/challenge-amigo-secreto/)
+
 
 1.  Introduce un nombre en el campo de texto que dice **"Escribe un nombre"**.
 2.  Haz clic en el botón **"Añadir"** para incluir el nombre en la lista de participantes.
