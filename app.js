@@ -23,12 +23,17 @@ function limpiar() {
 }
 //
 function sortearAmigo() {
-    let NumeroDeAmigos = amigos.length;
-     console.log(NumeroDeAmigos);
-    let aleatorio = Math.floor(Math.random()*NumeroDeAmigos);
-    console.log(aleatorio);
-    console.log(amigos [aleatorio]);
-    let amigoSecreto = amigos [aleatorio];
-    CambiarTexto("resultado",amigoSecreto);
+    if(amigos ==0){
+        alert("Ingresa amigos");
+    }else {
+        let NumeroDeAmigos = amigos.length;
+        console.log(NumeroDeAmigos);
+        let aleatorio = Math.floor(Math.random()*NumeroDeAmigos);
+        console.log(aleatorio);
+        console.log(amigos [aleatorio]);
+        let amigoSecreto = amigos [aleatorio];
+        CambiarTexto("resultado",amigoSecreto);
+    }
+    
 }
 
